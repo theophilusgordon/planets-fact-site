@@ -1,0 +1,237 @@
+@media only screen and (max-width: 500px){
+  // Planet Colors
+  $mecury-color: #419EBB;
+  $venus-color: #EDA249;
+  $earth-color: #6F2ED6;
+  $mars-color: #D14C32;
+  $jupiter-color: #D83A34;
+  $saturn-color: #CD5120;
+  $uranus-color: #1EC2A4;
+  $neptune-color: #2D68F0;
+
+    header {
+      display: flex;
+    }
+
+    .logo{
+      width: 40%;
+      text-align: left;
+    }
+
+    nav {
+      width: max-content;
+
+      .fa {
+        display: block;
+        font-size: 2rem;
+        color: #FFFFFF;
+      }
+
+      ul {
+        display: none;
+      }
+
+      ul.active {
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        display: block;
+        background-color: #070724;
+        width: 100%;
+        height: 90vh;
+
+        li {
+        margin-block: .5rem;
+        text-align: left;
+        border-bottom: 1px solid#38384F;
+        font-size: 1.5rem;
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+          
+          img{
+            display: inline;
+            margin-block: auto;
+            margin-right: 30px;
+          }
+
+          .bullet {
+            display: inline;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+
+          #bullet {
+            &-mercury {
+              background-color: $mecury-color;
+            }
+            
+            &-venus {
+              background-color: $venus-color;
+            }
+            
+            &-earth {
+              background-color: $earth-color;
+            }
+            
+            &-mars {
+              background-color: $mars-color;
+            }
+            
+            &-jupiter {
+              background-color: $jupiter-color;
+            }
+            
+            &-saturn {
+              background-color: $saturn-color;
+            }
+            
+            &-uranus {
+              background-color: $uranus-color;
+            }
+            
+            &-neptune {
+              background-color: $neptune-color;
+            }
+            
+          }
+        }
+      }
+    }
+
+    
+
+    main {
+      grid-template-areas: 'btns btns'
+                            'img img'
+                            'text text';
+      
+      img {
+        max-width: 300px;
+      }
+    }
+
+    .info {
+      text-align: center;
+      margin-block: 2rem;
+    }
+
+    .buttons {
+      align-self: flex-start;
+      display: flex;
+      height: max-content;
+      border-bottom: 1px solid #38384F;
+    }
+
+    button{
+      border: none;
+      padding-left: 0;
+
+      span {
+        display: none;
+      }
+
+      &:nth-of-type(1){
+        &::after {
+          content: 'overview';
+        }
+      }
+
+      &:nth-of-type(2){
+        &::after {
+          content: 'structure';
+        }
+      }
+
+      &:nth-of-type(3){
+        &::after {
+          content: 'surface';
+        }
+      }
+
+    }
+
+    #mercury {
+      button.active {
+      border-bottom: 5px solid $mecury-color;
+      background-color: transparent;
+      }
+    }
+
+    #venus {
+      button.active {
+      border-bottom: 5px solid $venus-color;
+      background-color: transparent;
+      }
+    }
+
+    #earth {
+      button.active {
+      border-bottom: 5px solid $earth-color;
+      background-color: transparent;
+      }
+    }
+
+    #mars {
+      button.active {
+      border-bottom: 5px solid $mars-color;
+      background-color: transparent;
+      }
+    }
+
+    #jupiter {
+      button.active {
+      border-bottom: 5px solid $jupiter-color;
+      background-color: transparent;
+      }
+    }
+
+    #saturn {
+      button.active {
+      border-bottom: 5px solid $saturn-color;
+      background-color: transparent;
+      }
+    }
+
+    #uranus {
+      button.active {
+      border-bottom: 5px solid $uranus-color;
+      background-color: transparent;
+      }
+    }
+
+    #neptune {
+      button.active {
+      border-bottom: 5px solid $neptune-color;
+      background-color: transparent;
+      }
+    }
+
+    footer {
+      display: block;
+      height: max-content;
+      margin-top: 5rem;
+    }
+
+    .xtics {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-block: .5rem;
+
+      &-name {
+        font-size: 1rem;
+      }
+
+      &-detail {
+        font-size: 1.5rem;
+      }
+    }
+}

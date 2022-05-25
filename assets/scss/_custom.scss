@@ -1,0 +1,81 @@
+@use './config' as *;
+
+#mercury {
+  a:hover::before {
+    background-color: $mecury-color;
+  }
+
+  button.active {
+    background-color: $mecury-color;
+  }
+}
+
+#venus {
+  a:hover::before {
+    background-color: $venus-color;
+  }
+
+  button.active {
+    background-color: $venus-color;
+  }
+}
+
+#earth {
+  a:hover::before {
+    background-color: $earth-color;
+  }
+
+  button.active {
+    background-color: $earth-color;
+  }
+}
+
+#mars {
+  a:hover::before {
+    background-color: $mars-color;
+  }
+
+  button.active {
+    background-color: $mars-color;
+  }
+}
+
+#jupiter {
+  a:hover::before {
+    background-color: $jupiter-color;
+  }
+
+  button.active {
+    background-color: $jupiter-color;
+  }
+}
+
+#saturn {
+  a:hover::before {
+    background-color: $saturn-color;
+  }
+
+  button.active {
+    background-color: $saturn-color;
+  }
+}
+
+#uranus {
+  a:hover::before {
+    background-color: $uranus-color;
+  }
+
+  button.active {
+    background-color: $uranus-color;
+  }
+}
+
+#neptune {
+  a:hover::before {
+    background-color: $mecury-color;
+  }
+
+  button.active {
+    background-color: $neptune-color;
+  }
+}

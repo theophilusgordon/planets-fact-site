@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// General colors
+$white: #FFFFFF;
+$black: #070724;
+$gray: #38384F;
+$lightgray: #838391;
+
+// Custom planet colors
+$mecury-color: #419EBB;
+$venus-color: #EDA249;
+$earth-color: #6F2ED6;
+$mars-color: #D14C32;
+$jupiter-color: #D83A34;
+$saturn-color: #CD5120;
+$uranus-color: #1EC2A4;
+$neptune-color: #2D68F0;
